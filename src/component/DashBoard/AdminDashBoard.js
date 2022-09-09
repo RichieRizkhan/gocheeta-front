@@ -112,6 +112,16 @@ function AdminDashBoard() {
 return ( 
     <div className="Container"  >
 
+<div>
+                  <Button variant="danger" style={{float:"right",width:"10%",marginTop:"60px"}} onClick={()=>{
+                       localStorage.clear();
+                       sessionStorage.clear();
+                       history.push('/')
+
+                  }}>Log Out</Button>
+              </div>
+
+
         
         <div className="Stat" style={{display:"flex"}}>
             <Card  
@@ -377,14 +387,6 @@ return (
                        
                       </tbody>
                   </Table>
-              </div>
-              <div>
-                  <Button variant="danger" style={{marginLeft:"30%",width:"30%",marginTop:"30px"}} onClick={()=>{
-                       localStorage.clear();
-                       sessionStorage.clear();
-                       history.push('/')
-
-                  }}>Log Out</Button>
               </div>
 
 

@@ -19,12 +19,7 @@ function OptionHeader() {
                 <Container>
                 <Navbar.Brand style={{color:"black"}} href="#home">Go Cheeta</Navbar.Brand>
 
-                <Button variant="danger" style={{marginLeft:"30%",width:"30%",marginTop:"30px"}} onClick={()=>{
-                       localStorage.clear();
-                       sessionStorage.clear();
-                       history.push('/')
-
-                  }}>Log Out</Button>
+             
             
             {/* <Nav style={{marginLeft:"100px",color:'black'}} className="me-auto">
                     <Nav.Link href="/Children">Children</Nav.Link>
